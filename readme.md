@@ -1,29 +1,6 @@
-## GoIT Node.js Course Template Homework
-
-Wykonaj forka tego repozytorium, aby wykonywać zadania domowe (2-6). Fork utworzy repozytorium na Twoim koncie na http://github.com
-
-Dodaj mentora jako collaboratora.
-
-Dla każdego zadania domowego utwórz nową gałąź (branch).
-
-- hw02
-- hw03
-- hw04
-- hw05
-- hw06
-
-Każda nowa gałąź dla zadania powinna być tworzona z gałęzi master.
-
-Po zakończeniu wykonania zadania domowego na swojej gałęzi, należy zrobić pull request (PR). Następnie dodaj mentora do przeglądu kodu. Dopiero po zatwierdzeniu PR przez mentora możesz scalić gałąź z zadaniem domowym do gałęzi master.
-
-Uważnie czytaj komentarze mentora. Popraw uwagi i zrób commit na gałęzi z zadaniem domowym. Zmiany automatycznie pojawią się w PR po wysłaniu commitu z poprawkami na GitHub. Po poprawkach ponownie dodaj mentora do przeglądu kodu.
-
-- Podczas oddawania zadania domowego podaj link do PR.
-- Kod JS jest czytelny i zrozumiały, do formatowania używany jest Prettier.
-
 # Aplikacja Kontaktów
 
-Aplikacja Kontaktów to REST API umożliwiające zarządzanie listą kontaktów. Pozwala użytkownikom na dodawanie, aktualizowanie, przeglądanie i usuwanie informacji kontaktowych. Dodatkowo, aplikacja wspiera oznaczanie kontaktów jako ulubione.
+Aplikacja Kontaktów to REST API umożliwiające zarządzanie listą kontaktów. Pozwala użytkownikom na dodawanie, aktualizowanie, przeglądanie i usuwanie informacji kontaktowych. Dodatkowo, aplikacja wspiera oznaczanie kontaktów jako ulubione oraz funkcje uwierzytelnienia i autoryzacji użytkowników.
 
 ## Funkcjonalności
 
@@ -33,6 +10,10 @@ Aplikacja Kontaktów to REST API umożliwiające zarządzanie listą kontaktów.
 - **Aktualizacja kontaktu**: Edytuj istniejące informacje kontaktowe.
 - **Usuwanie kontaktu**: Usuń kontakt z listy.
 - **Zarządzanie ulubionymi**: Oznacz kontakt jako ulubiony lub usuń oznaczenie.
+- **Rejestracja użytkownika**: Umożliwia tworzenie nowego konta użytkownika.
+- **Logowanie użytkownika**: Uwierzytelnienie i otrzymywanie tokena JWT dla dostępu do chronionych tras.
+- **Autoryzacja dostępu**: Ograniczenie dostępu do pewnych funkcji aplikacji tylko dla zalogowanych użytkowników.
+- **Pobieranie danych aktualnego użytkownika**: Wyświetlanie informacji o aktualnie zalogowanym użytkowniku.
 
 ## Technologie
 
@@ -42,3 +23,5 @@ Aplikacja została zbudowana z wykorzystaniem:
 - Express.js - framework serwera
 - MongoDB - baza danych
 - Mongoose - ODM dla MongoDB
+- JWT (JSON Web Token): Standard do tworzenia tokenów dostępu, umożliwiający bezpieczne przesyłanie informacji między stronami.
+- bcryptjs: Biblioteka do hashowania haseł, używana w procesie autoryzacji.
